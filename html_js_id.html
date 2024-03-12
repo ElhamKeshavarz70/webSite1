@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .c1{color:red;font-size: 15px;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function power()
+        {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var p = 1;
+            for (i = 1; i <= y; i++)
+            {
+                p = p * x;
+            }
+  
+            document.getElementById("p").value= p;
+
+            document.getElementById("msg").innerHTML="This is a factorile";
+            
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="frm1">
+        Number 1= <input type="text" id="x">
+        Number 2= <input type="text" id="y"> <br><br>
+
+        <input type="button" onclick="power()" value="Power"><br><br>
+        <p id="msg" class="c1"></p>
+        Answer= <input type="text" id="p">
+
+
+    </form>
+</body>
+
+</html>

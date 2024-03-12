@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="pic_but.css">
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="js-persian-cal.css">
+        <script type="text/javascript" src="js-persian-cal.min.js"></script>
+</head>
+
+<body>
+    <h1 align="center">Image Slide Show</h1>
+        <div>
+            <label for="pcal1"></label><br>
+            <input type="text" id="pcal1" class="pdate"><br>
+        </div>
+    <center>
+    <div id="arvand">
+        <img src="pics/p1.jpg" alt="img1">
+        <img src="pics/p2.jpg" alt="img2">
+        <img src="pics/p3.jpg" alt="img3">
+        <img src="pics/p4.jpg" alt="img4">
+        <img src="pics/p5.jpg" alt="img5">
+        <img src="pics/p5.jpg" alt="img5">
+    </div>
+    </center>
+    <div>
+        <button id="prvBtn">Previuse</button>
+        <button id="nextBtn">&nbsp; Next &nbsp;</button>
+    </div>
+</body>
+</html>
+
+<script src="pic_but.js"></script>
+    <script type="text/javascript">
+        var objCal1 = new AMIB.persianCalendar('pcal1');
+    </script>

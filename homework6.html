@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<table border='1' cellpadding='10' cellspacing='2'>");
+        document.write("<caption>This a table for karfarma</caption>");
+        for(j=1;j<=20;j++)
+        {
+        document.write("<th>Col"+j+"</th>");
+        }
+        document.write("<tr>");
+        
+        var cnt=0; var sum=0;
+        for(i=100;i<=999;i++)
+        {
+            a=parseInt(i%10);
+            b=parseInt(i/10) % 10;
+            
+            if(a!=0 && b!=0)
+            {
+                cnt++;
+                sum=sum+i;
+                //sum+=i;
+                //document.writeln("&nbsp;&nbsp;<b><font size='3'>"+i+"</font></b>&nbsp;&nbsp;");
+                document.write("<td><b><font size='3'>");
+                document.write(i);
+                document.write("</font></b></td>");
+                if(parseInt(cnt%20)==0)
+                {
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    }
+            }
+        
+        }
+        document.write("</tr>");
+        document.write("</table>");
+
+        document.write("<center>");
+        document.write("<font color='red'> Total="+sum+"</font>");
+        document.write("</center>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

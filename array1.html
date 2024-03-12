@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ary=new Array(10);
+        ary[0]=22;
+        ary[5]=35;
+
+        document.writeln(ary[0]);
+        document.writeln(ary[5]);
+
+
+
+
+    var x=new Array("sat","sun","mon","tue","wed","the","fri");
+    document.write(x+"<br>");
+    document.write(x[5]);
+    document.write(x.length);
+    for(i=0;i<x.length;i++)
+    {
+        document.writeln(x[i]);
+    }
+
+
+    x.forEach( x => {
+        document.writeln(x);
+    });
+
+    for(p in x)
+    {
+        document.writeln(x[p]);
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+var x=111;
+p=x%7;
+alert("p="+p);
+var roz="";
+if(p==0) roz="3 شنبه";
+if(p==1) roz="4 شنبه";
+if(p==2) roz="5 شنبه";
+if(p==3) roz="6 شنبه";
+if(p==4) roz=" شنبه";
+if(p==5) roz="1 شنبه";
+if(p==6) roz="2 شنبه";
+alert(roz);
+
+
+
+var x=231;
+if(x<=186)
+{
+    d = x % 31;
+    if(d==0) 
+        {
+            d=31;
+            m = (x / 31);
+        }
+    else
+       {
+        m=(x/31)+1;
+       }
+}
+else
+{
+    m=(x-186)/30+7;
+    d=(x-186)%30;
+}
+
+alert("Month="+parseInt(m)+"  Day="+d);
+
+
+
+var m=8;
+var d=15;
+alert("aaa");
+if(m<=6) 
+    p=(m-1)*31+d; 
+else
+    p=186+(m-7)*30+d;
+alert(p);
+
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

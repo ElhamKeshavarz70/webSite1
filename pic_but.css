@@ -1,0 +1,33 @@
+#arvand {
+    width: 800px;
+    height: 500px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#arvand img {
+    width: 100%;
+    height: auto;
+    display: none;
+    transition: 4s;
+}
+
+#arvand img:first-child {
+    display: block;
+}
+
+#prvBtn,
+#nextBtn {
+    top: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#prvBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}

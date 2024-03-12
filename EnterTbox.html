@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="frm1">
+
+    <input type="text" tabindex="1" placeholder="Enter Number">
+    <input type="text" tabindex="2" placeholder="Enter Number">
+    <input type="text" tabindex="3" placeholder="Enter Number">
+    <input type="text" tabindex="4" placeholder="Enter Number">
+    <input type="text" tabindex="5" placeholder="Enter Number11111">
+
+</form>
+
+</body>
+</html>
+
+<script>
+const form=document.getElementById("frm1");
+
+form.addEventListener('keydown',function(event){
+if(event.keyCode === 13){
+    const curInp=document.activeElement;
+    const nextInp=curInp.nextElementSibling;
+
+    if(nextInp && nextInp.tagName==='INPUT' && nextInp.tabIndex!=-1){
+        nextInp.focus();
+    }
+}
+});
+
+</script>
+
+
+
+//if(x=='10')  تساوی
+//if(x==='10')  همانی
